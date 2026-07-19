@@ -1,0 +1,39 @@
+{
+  "name": "personal-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "app.js",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/vite/bin/vite.js",
+    "build": "node -e \"var m=process.version.match(/^v([0-9]+)/);if(!m||+m[1]<18){console.error('Node 18+ required. Found: '+process.version);process.exit(1)}\" && tsc -b && node ./node_modules/vite/bin/vite.js build",
+    "build:site": "npm run build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "start": "node app.js",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "vite": "6.4.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "6.0.3",
+    "eslint": "9.39.1",
+    "@eslint/js": "9.39.5",
+    "typescript-eslint": "8.64.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.3",
+    "globals": "17.7.0",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "vitest": "3.2.7",
+    "jsdom": "26.1.0",
+    "@testing-library/react": "16.3.2"
+  }
+}
