@@ -15,9 +15,9 @@ A visitor can browse Sandeep's full professional story — hero, about, experien
 
 ### Content Curation
 - **D-01:** Resume PDF (`~/Downloads/Sandeep_Gupta_Platform_Engineering.pdf`) is used as-is as the source of truth for About, Experience, Skills, Certifications, and Education content — no additional content synthesis beyond what's in the resume.
-- **D-02:** The 3-6 curated GitHub project cards (PROJ-01) will be picked by the user from `github.com/Sandyzie05` (~30 public repos) rather than Claude selecting them.
-- **D-03:** The 2-3 LinkedIn recommendation quotes (SOCIAL-01) will be manually transcribed and supplied by the user (with recommender name/title), not scraped or invented.
-- **D-04:** Both D-02 and D-03 content have not yet been supplied as of context-gathering time — see Deferred/pre-execution dependencies below. Executor should treat these as blocking inputs for the Projects and Social Proof sections specifically, not for the rest of the phase.
+- **D-02:** PROJ-01's 6 featured repos are locked: `acksync`, `acksync_crm_lmb`, `stock_predictor`, `jagdamba_automobiles`, `cbse_tutor`, `compliOS` (all under `github.com/Sandyzie05`). Descriptions and tech tags still need to be drafted from each repo's actual content during research/planning — not fabricated from name alone.
+- **D-03:** SOCIAL-01's 3 recommendation quotes are locked (selected from 6 the user supplied) — see `<specifics>` for full text/attribution. 3 alternates (Kevin Estes, Kharb Pradeep, Clark Baker) were not selected but are easy swaps if the user prefers different ones later.
+- **D-04:** Quotes are lightly trimmed of LinkedIn UI chrome (connection degree, date, relationship line, "All LinkedIn membersOn" boilerplate) — praise text itself is kept verbatim per the user's instruction to use only name + company from the raw paste.
 
 ### Deployment Specifics
 - **D-05:** Deployment mirrors the `jagdamba_automobiles` pattern exactly: React + TypeScript + Vite SPA built to `dist/`, served at runtime by a dependency-free Node `app.js` using only `node:http`/`node:fs`/`node:path`/`node:url` — no Vite/esbuild/WASM at runtime (CloudLinux LVE constraint).
@@ -78,13 +78,28 @@ A visitor can browse Sandeep's full professional story — hero, about, experien
 - Portfolio is professional-content-only for v1; no personal/hobby content (already locked in PROJECT.md, restated here as a scope fence).
 - Site is a single-page app shell with distinct content sections (hero, about, experience, projects, skills, certifications, education, contact, social proof) rather than multiple routed pages — consistent with "portfolio" conventions and simplest to build fast per the user's stated timeline priority.
 
+### PROJ-01 — Featured Repos (locked list)
+`github.com/Sandyzie05/{repo}` for each of: `acksync`, `acksync_crm_lmb`, `stock_predictor`, `jagdamba_automobiles`, `cbse_tutor`, `compliOS`. Card copy (description, tech tags) to be drafted from each repo's README/content during research/planning — do not invent details from the name alone.
+
+### SOCIAL-01 — Recommendation Quotes (locked selection, 3 of 6 supplied)
+
+**Ankit Agnihotri — Sr. Site Reliability Engineer, Adobe**
+> "Sandeep is an amazing colleague. He is filled with outstanding leadership qualities. His attitude towards work and his co-workers is commendable. He is strong in will power to take the very first step to change the monotonous system."
+
+**Nathan Stewart — Lead DevOps Engineer, Five9**
+> "Sandeep has great passion to learn and fulfill his responsibilities to the best of his ability. While working on my team, he never ceased to give 100 percent effort until the task or project was complete."
+
+**Rebecca Cengiz-Robbs — IT Infrastructure & Project Management Professional**
+> "Sandeep is one of the most motivated and hardworking engineers I know. I never had to worry about his daily work or projects. He owned his work completely and consistently met deadlines and provided excellent communication and support to our internal customers. He invested many hours of his personal time to research and learn new technologies to help him succeed. It was an honor to work with Sandeep."
+
+**Not selected (alternates on file if a swap is wanted):** Kevin Estes (managed Sandeep directly — "self starter... dug into issues"), Kharb Pradeep (Cloud Consultant, Azure/AWS — "dedicated and talented IT professional"), Clark Baker (Senior Software Engineer, Carbonite — monitoring-software collaboration story).
+
 </specifics>
 
 <deferred>
 ## Deferred Ideas
 
-- **Pre-execution content dependency:** User to supply the 3-6 chosen `Sandyzie05` repos (title, description, tech tags — or raw repo URLs for Claude to draft descriptions from) before/during Phase 1 execution's Projects section work.
-- **Pre-execution content dependency:** User to supply 2-3 LinkedIn recommendation quotes (verbatim text + recommender name/title) before/during Phase 1 execution's Social Proof section work.
+- **Resolved:** Repo list (D-02) and recommendation quotes (D-03) supplied by user on 2026-07-19 — no longer a pre-execution dependency. Only card copy for the 6 repos (description/tags) remains to be drafted from actual repo content during research/planning.
 - **Pre-execution deployment dependency:** Confirm target domain/subdomain and new GitHub repo name before the DEPLOY-01 execution step (not needed for earlier content/shell work).
 - Detailed visual design system (palette, type scale, spacing, component styling) — belongs to `/gsd-ui-phase 1`, not this content-focused discuss-phase.
 - Live GitHub API stats, deeper case-study writeups, blog/articles section, contact form — already tracked as v2/out-of-scope in REQUIREMENTS.md; restated here only to confirm they didn't resurface as scope creep during this discussion.

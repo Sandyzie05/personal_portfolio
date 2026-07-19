@@ -71,8 +71,8 @@ None yet.
 
 ### Blockers/Concerns
 
-- GitHub repo triage (which 3-6 of ~30 `Sandyzie05` repos to curate for PROJ-01) is not yet done — hard ordering dependency for Phase 1 content work, should happen early in Phase 1 planning/execution.
-- LinkedIn recommendation permissions (SOCIAL-01, 2-3 quotes) are a manual, non-technical, potentially slow external dependency — should be initiated early in Phase 1, not left to the end.
+- Resolved 2026-07-19: PROJ-01 repo list locked (`acksync`, `acksync_crm_lmb`, `stock_predictor`, `jagdamba_automobiles`, `cbse_tutor`, `compliOS`) and SOCIAL-01 quotes locked (Ankit Agnihotri, Nathan Stewart, Rebecca Cengiz-Robbs) — see 01-CONTEXT.md. Remaining: draft repo card copy from actual repo content during planning/execution.
+- Deployment target domain/subdomain and new GitHub repo name still unconfirmed — needed before DEPLOY-01 execution step, not before.
 - Phase 2 (Background Engine Core) is flagged by research as needing deeper research during planning (GPU-driven particle interpolation / shader-based assemble-disassemble has no controlled benchmark for this project's specific case) — consider `--research-phase` when planning Phase 2.
 
 ## Deferred Items
