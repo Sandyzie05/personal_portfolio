@@ -12,8 +12,11 @@ describe('Experience', () => {
       expect(heading.textContent).toContain(experience[index].role)
     })
 
-    for (const role of experience) {
-      expect(screen.getByText(role.company)).toBeTruthy()
+    const uniqueCompanies = [...new Set(experience.map((role) => role.company))]
+    for (const company of uniqueCompanies) {
+      expect(
+        screen.getAllByText((_, node) => node?.textContent?.includes(company) ?? false).length,
+      ).toBeGreaterThan(0)
     }
   })
 

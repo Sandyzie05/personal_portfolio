@@ -244,3 +244,53 @@ footer {
   background: var(--color-bg);
   color: var(--color-text-muted);
 }
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.timeline-entry {
+  border-left: 2px solid var(--color-surface-fallback);
+  padding-left: var(--space-md);
+}
+
+.timeline-role {
+  margin: 0 0 var(--space-xs);
+}
+
+.timeline-meta,
+.timeline-dates {
+  color: var(--color-text-muted);
+  font-size: var(--text-label-size);
+  margin: 0 0 var(--space-sm);
+}
+
+.timeline-achievements {
+  list-style: none;
+  margin: var(--space-sm) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.timeline-achievements li {
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.timeline-achievements li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
