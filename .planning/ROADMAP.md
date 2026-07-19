@@ -30,7 +30,12 @@ Decimal phases appear surrounding integers in numeric order.
   3. Visitor can browse 3-6 curated project cards (description, tech tags, GitHub link), skills grouped by category, certifications, and education, all sourced from static, hand-curated build-time content data (no live GitHub API calls at runtime).
   4. Visitor can email Sandeep directly, open his LinkedIn and GitHub profiles, download his resume PDF with one click, and read 2-3 transcribed recommendation quotes.
   5. The site is live at its MilesWeb production URL, deployed via the proven `jagdamba_automobiles` dependency-free Node `app.js` + Vite `dist/` pattern.
-**Plans**: TBD
+**Plans**: 4 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold (Vite+React+TS+ESLint+Vitest) + Hero + Contact vertical slice, proven locally end-to-end
+- [ ] 01-02-PLAN.md — About + Experience + Skills + Certifications + Education (resume-derived static content)
+- [ ] 01-03-PLAN.md — Projects + Testimonials (curated content) + full 9-section nav/order assembly
+- [ ] 01-04-PLAN.md — Production deployment to MilesWeb cPanel (DEPLOY-01)
 **UI hint**: yes
 
 ### Phase 2: Background Engine & 4-Theme System
