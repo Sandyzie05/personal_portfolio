@@ -107,16 +107,41 @@ Explicitly excluded. Documented to prevent scope creep.
 
 ## Traceability
 
-Populated during roadmap creation (Step 8).
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| _(pending roadmap)_ | — | — |
+| HERO-01 | Phase 1 | Pending |
+| ABOUT-01 | Phase 1 | Pending |
+| EXP-01 | Phase 1 | Pending |
+| EXP-02 | Phase 1 | Pending |
+| PROJ-01 | Phase 1 | Pending |
+| PROJ-02 | Phase 1 | Pending |
+| PROJ-03 | Phase 1 | Pending |
+| SKILL-01 | Phase 1 | Pending |
+| SKILL-02 | Phase 1 | Pending |
+| CERT-01 | Phase 1 | Pending |
+| EDU-01 | Phase 1 | Pending |
+| CONTACT-01 | Phase 1 | Pending |
+| CONTACT-02 | Phase 1 | Pending |
+| CONTACT-03 | Phase 1 | Pending |
+| CONTACT-04 | Phase 1 | Pending |
+| SOCIAL-01 | Phase 1 | Pending |
+| DEPLOY-01 | Phase 1 | Pending |
+| BG-02 | Phase 2 | Pending |
+| BG-03 | Phase 2 | Pending |
+| BG-05 | Phase 2 | Pending |
+| BG-06 | Phase 2 | Pending |
+| BG-01 | Phase 3 | Pending |
+| BG-04 | Phase 3 | Pending |
+| QUAL-01 | Phase 4 | Pending |
+| QUAL-02 | Phase 4 | Pending |
+| QUAL-03 | Phase 4 | Pending |
+| QUAL-04 | Phase 4 | Pending |
+| QUAL-05 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 28 total
-- Mapped to phases: 0
-- Unmapped: 28 ⚠️ (expected — roadmap not yet created)
+- Mapped to phases: 28
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-07-19*
