@@ -26,8 +26,8 @@ A visitor can browse Sandeep's full professional story — hero, about, experien
 - **D-08:** Target domain/subdomain and the new GitHub repo name are not yet finalized — see Deferred/pre-execution dependencies below.
 
 ### Visual Design Direction
-- **D-09 (Claude's Discretion):** Default to a dark-mode-first, modern/minimalist, technical-professional aesthetic (clean sans-serif type, generous whitespace, card-based section layouts) — this pairs naturally with full-bleed WebGL backgrounds across all 4 themes and fits an SRE/platform-engineer's professional register. This is a starting default, not a locked spec.
-- **D-10:** Full visual system detail (exact palette, type scale, spacing system, component styling) is deferred to `/gsd-ui-phase 1`, which produces a dedicated UI-SPEC.md — this phase's discussion only sets the high-level direction so planning/research aren't unguided.
+- **D-09 [informational]:** Claude's Discretion — default to a dark-mode-first, modern/minimalist, technical-professional aesthetic (clean sans-serif type, generous whitespace, card-based section layouts) — this pairs naturally with full-bleed WebGL backgrounds across all 4 themes and fits an SRE/platform-engineer's professional register. This is a starting default, not a locked spec. Superseded by `01-UI-SPEC.md` (produced by `/gsd-ui-phase 1`), which every Phase 1 plan already consumes — not independently tracked in plan `must_haves`.
+- **D-10 [informational]:** Full visual system detail (exact palette, type scale, spacing system, component styling) is deferred to `/gsd-ui-phase 1`, which produces a dedicated UI-SPEC.md — this phase's discussion only sets the high-level direction so planning/research aren't unguided. Fulfilled: `01-UI-SPEC.md` exists and its `## UI Considerations` are lifted into plan `must_haves` directly — this decision describes the hand-off itself, not an implementable requirement in its own right.
 
 ### Claude's Discretion
 - Exact color palette, type scale, and component-level styling (deferred to UI-SPEC.md per D-10).
