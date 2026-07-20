@@ -372,3 +372,41 @@ footer {
 .project-description {
   margin: 0;
 }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  align-items: start;
+  margin: 0;
+}
+
+.testimonial-card {
+  background: var(--color-surface-fallback);
+  background: var(--color-surface);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+  padding: var(--space-md);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+}
+
+.testimonial-quote {
+  margin: 0 0 var(--space-md);
+}
+
+.testimonial-name {
+  font-weight: var(--text-label-weight);
+  margin: 0 0 var(--space-xs);
+}
+
+.testimonial-title {
+  color: var(--color-text-muted);
+  font-size: var(--text-label-size);
+  margin: 0;
+}

@@ -6,6 +6,7 @@ import { Projects } from './sections/Projects'
 import { Skills } from './sections/Skills'
 import { Certifications } from './sections/Certifications'
 import { Education } from './sections/Education'
+import { Testimonials } from './sections/Testimonials'
 import { Contact } from './sections/Contact'
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Skills />
         <Certifications />
         <Education />
+        <Testimonials />
         <Contact />
       </main>
       <footer>
