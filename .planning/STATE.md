@@ -5,15 +5,15 @@ milestone_name: milestone
 current_phase: 1
 current_phase_name: App Shell, Content & Deployment
 status: executing
-stopped_at: Plan 01-01 (Walking Skeleton) complete
-last_updated: "2026-07-19T18:29:13.000Z"
+stopped_at: Plan 01-02 (About/Experience/Skills/Certifications/Education) complete
+last_updated: "2026-07-19T18:42:05.370Z"
 last_activity: 2026-07-19
-last_activity_desc: Plan 01-01 Walking Skeleton complete — scaffold, app.js, Hero/Contact slice, tests, deploy-smoke.sh all proven locally
+last_activity_desc: Plan 01-02 complete — About/Experience/Skills/Certifications/Education sections wired into App.tsx and TopNav; 13/13 tests passing
 progress:
   total_phases: 1
   completed_phases: 0
   total_plans: 4
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -29,31 +29,37 @@ See: .planning/PROJECT.md (updated 2026-07-18)
 ## Current Position
 
 Phase: 1 (App Shell, Content & Deployment) — EXECUTING
-Plan: 1 of 4 complete — next up: 01-02 (About/Experience/Skills/Certifications/Education)
+Plan: 2 of 4 complete — next up: 01-03 (Projects/Testimonials)
 Status: Executing Phase 1
-Last activity: 2026-07-19 — Plan 01-01 Walking Skeleton complete
-Progress: [███░░░░░░░] 25%
+Last activity: 2026-07-19 — Plan 01-02 (About/Experience/Skills/Certifications/Education) complete
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 1
-- Average duration: 30 min
-- Total execution time: 0.5 hours
+- Total plans completed: 2
+- Average duration: 17.5 min
+- Total execution time: 0.58 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1 | 1 | 30 min | 30 min |
+| 1 | 2 | 35 min | 17.5 min |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-01 (30 min)
-- Trend: -
+- Last 5 plans: 01-01 (30 min), 01-02 (5 min)
+- Trend: decreasing (simpler content-slice plan vs. scaffold plan)
 
 *Updated after plan completion*
+**Per-Plan Metrics:**
+
+| Plan | Duration | Tasks | Files |
+|------|----------|-------|-------|
+| Phase 1 P01-01 | 30min | 3 tasks | 26 files |
+| Phase 1 P01-02 | 5min | 3 tasks | 15 files |
 
 ## Accumulated Context
 
@@ -86,6 +92,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-07-19T18:29:13.000Z
-Stopped at: Plan 01-01 (Walking Skeleton) complete — ready to plan/execute 01-02
-Resume file: .planning/phases/01-app-shell-content-deployment/01-01-SUMMARY.md
+Last session: 2026-07-19T18:41:31.071Z
+Stopped at: Plan 01-02 (About/Experience/Skills/Certifications/Education) complete — ready to execute 01-03
+Resume file: .planning/phases/01-app-shell-content-deployment/01-02-SUMMARY.md
