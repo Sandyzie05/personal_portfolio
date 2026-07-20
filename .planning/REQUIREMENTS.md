@@ -13,31 +13,31 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### About
 
-- [ ] **ABOUT-01**: About section synthesizes a professional summary from resume content (background, focus areas, career narrative)
+- [x] **ABOUT-01**: About section synthesizes a professional summary from resume content (background, focus areas, career narrative)
 
 ### Experience
 
-- [ ] **EXP-01**: Experience section presents full professional history (Adobe/Workfront and prior roles) in a timeline/chronological format
-- [ ] **EXP-02**: Each role lists quantified achievements and impact, not just responsibilities
+- [x] **EXP-01**: Experience section presents full professional history (Adobe/Workfront and prior roles) in a timeline/chronological format
+- [x] **EXP-02**: Each role lists quantified achievements and impact, not just responsibilities
 
 ### Projects
 
-- [ ] **PROJ-01**: Projects section surfaces 3-6 curated GitHub repos from `Sandyzie05` as simple cards (title, description, tech tags, link)
-- [ ] **PROJ-02**: Project data (descriptions, tags, stats) is static/hand-curated at build time — no live GitHub API calls at runtime
-- [ ] **PROJ-03**: Each project card links to its GitHub repo
+- [x] **PROJ-01**: Projects section surfaces 3-6 curated GitHub repos from `Sandyzie05` as simple cards (title, description, tech tags, link)
+- [x] **PROJ-02**: Project data (descriptions, tags, stats) is static/hand-curated at build time — no live GitHub API calls at runtime
+- [x] **PROJ-03**: Each project card links to its GitHub repo
 
 ### Skills
 
-- [ ] **SKILL-01**: Skills section organizes skills by category (cloud/infra, IaC, GitOps/DevOps tooling, observability, languages, AI tooling, etc.) pulled from resume
-- [ ] **SKILL-02**: Skills are presented as category groupings/tags, not skill-bar percentage graphics
+- [x] **SKILL-01**: Skills section organizes skills by category (cloud/infra, IaC, GitOps/DevOps tooling, observability, languages, AI tooling, etc.) pulled from resume
+- [x] **SKILL-02**: Skills are presented as category groupings/tags, not skill-bar percentage graphics
 
 ### Certifications
 
-- [ ] **CERT-01**: Certifications section lists resume certifications (PCAP, Jenkins Engineer, AWS CSAA, MS Azure Fundamentals, ITIL V3, Datadog)
+- [x] **CERT-01**: Certifications section lists resume certifications (PCAP, Jenkins Engineer, AWS CSAA, MS Azure Fundamentals, ITIL V3, Datadog)
 
 ### Education
 
-- [ ] **EDU-01**: Education section lists MS Information Systems and BTech CS from resume
+- [x] **EDU-01**: Education section lists MS Information Systems and BTech CS from resume
 
 ### Contact
 
@@ -48,7 +48,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Social Proof
 
-- [ ] **SOCIAL-01**: Site includes 2-3 manually-transcribed LinkedIn recommendation quotes (with permission from recommenders)
+- [x] **SOCIAL-01**: Site includes 2-3 manually-transcribed LinkedIn recommendation quotes (with permission from recommenders)
 
 ### Background & Theme System
 
@@ -110,21 +110,21 @@ Explicitly excluded. Documented to prevent scope creep.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | HERO-01 | Phase 1 | Pending |
-| ABOUT-01 | Phase 1 | Pending |
-| EXP-01 | Phase 1 | Pending |
-| EXP-02 | Phase 1 | Pending |
-| PROJ-01 | Phase 1 | Pending |
-| PROJ-02 | Phase 1 | Pending |
-| PROJ-03 | Phase 1 | Pending |
-| SKILL-01 | Phase 1 | Pending |
-| SKILL-02 | Phase 1 | Pending |
-| CERT-01 | Phase 1 | Pending |
-| EDU-01 | Phase 1 | Pending |
+| ABOUT-01 | Phase 1 | Complete |
+| EXP-01 | Phase 1 | Complete |
+| EXP-02 | Phase 1 | Complete |
+| PROJ-01 | Phase 1 | Complete |
+| PROJ-02 | Phase 1 | Complete |
+| PROJ-03 | Phase 1 | Complete |
+| SKILL-01 | Phase 1 | Complete |
+| SKILL-02 | Phase 1 | Complete |
+| CERT-01 | Phase 1 | Complete |
+| EDU-01 | Phase 1 | Complete |
 | CONTACT-01 | Phase 1 | Pending |
 | CONTACT-02 | Phase 1 | Pending |
 | CONTACT-03 | Phase 1 | Pending |
 | CONTACT-04 | Phase 1 | Pending |
-| SOCIAL-01 | Phase 1 | Pending |
+| SOCIAL-01 | Phase 1 | Complete |
 | DEPLOY-01 | Phase 1 | Pending |
 | BG-02 | Phase 2 | Pending |
 | BG-03 | Phase 2 | Pending |
@@ -139,6 +139,7 @@ Explicitly excluded. Documented to prevent scope creep.
 | QUAL-05 | Phase 4 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 28 total
 - Mapped to phases: 28
 - Unmapped: 0 ✓
