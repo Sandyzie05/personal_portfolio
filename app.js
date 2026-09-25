@@ -39,8 +39,17 @@ function serveFile(res, filePath) {
   })
 }
 
+// Must match `base` in vite.config.ts (the URL subpath this app is served under).
+const BASE = '/portfolio'
+
 const server = http.createServer((req, res) => {
-  let urlPath = decodeURIComponent(req.url.split('?')[0])
+  let urlPath = req.url.split('?')[0]
+
+  if (urlPath.startsWith(BASE)) {
+    urlPath = urlPath.slice(BASE.length) || '/'
+  }
+
+  urlPath = decodeURIComponent(urlPath)
 
   const candidate = path.resolve(path.join(distDir, urlPath))
   const distRoot = path.resolve(distDir)
@@ -60,5 +69,5 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(port, '0.0.0.0', () => {
-  console.log(`Serving dist/ on http://0.0.0.0:${port}/`)
+  console.log(`Serving dist/ on http://0.0.0.0:${port}${BASE}/`)
 })
