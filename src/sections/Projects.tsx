@@ -2,11 +2,21 @@ import { projects } from '../content/projects'
 
 export function Projects() {
   return (
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
+    <section id="projects" className="projects-section" aria-labelledby="projects-heading">
+      <div className="section-heading split-heading">
+        <div>
+          <p className="eyebrow">Selected builds</p>
+          <h2 id="projects-heading">Ideas made operational.</h2>
+        </div>
+        <p>Personal projects are where I test product instincts, local AI, and end-to-end ownership.</p>
+      </div>
       <div className="projects-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.name}>
+        {projects.map((project, index) => (
+          <article className="project-card" key={project.name}>
+            <div className="project-topline">
+              <p>{project.kind}</p>
+              <span>0{index + 1}</span>
+            </div>
             <h3 className="project-name">{project.name}</h3>
             <p className="project-description">{project.description}</p>
             <ul className="tag-chip-list">
@@ -17,9 +27,9 @@ export function Projects() {
               ))}
             </ul>
             <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-              View on GitHub
+              View source <span aria-hidden="true">↗</span>
             </a>
-          </div>
+          </article>
         ))}
       </div>
     </section>

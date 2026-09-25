@@ -1,5 +1,10 @@
 <!-- GSD:project-start source:PROJECT.md -->
 
+> **2026-09-24 direction update:** `.planning/PROJECT.md`, `.planning/REQUIREMENTS.md`,
+> and `.planning/UI-REVAMP-2026-09.md` are authoritative. The four-theme WebGL
+> background material below is historical research, not active v1 scope. Current
+> v1 uses a content-first systems-topology hero plus persistent light/dark themes.
+
 ## Project
 
 **Sandeep Gupta — Portfolio**

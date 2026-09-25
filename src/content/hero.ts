@@ -2,11 +2,13 @@ export interface HeroContent {
   name: string
   title: string
   positioning: string
+  availability: string
 }
 
 export const hero: HeroContent = {
   name: 'Sandeep Gupta',
-  title: 'Senior Site Reliability Engineer',
+  title: 'Software Engineer · SRE · AI Builder',
   positioning:
-    'Senior Site Reliability Engineer & platform tool builder at Adobe — scaling infrastructure, observability, and AI-driven automation for 250+ engineers.',
+    'I build software platforms that make complex infrastructure easier to operate, safer to change, and faster to learn from.',
+  availability: 'Based in Utah · Building reliable systems since 2013',
 }

@@ -16,9 +16,10 @@ describe('Projects', () => {
   it('renders every GitHub link as target=_blank rel=noopener noreferrer', () => {
     render(<Projects />)
     for (const project of projects) {
-      const link = screen.getByText('View on GitHub', {
-        selector: `a[href="${project.repoUrl}"]`,
-      })
+      const link = document.querySelector(`a[href="${project.repoUrl}"]`)
+      expect(link).toBeInstanceOf(HTMLAnchorElement)
+      if (!(link instanceof HTMLAnchorElement)) throw new Error('Project link not found')
+      expect(link.textContent).toContain('View source')
       expect(link.getAttribute('target')).toBe('_blank')
       expect(link.getAttribute('rel')).toBe('noopener noreferrer')
     }

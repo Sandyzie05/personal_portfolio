@@ -4,8 +4,9 @@ import { Skills } from './Skills'
 import { skills } from '../content/skills'
 
 describe('Skills', () => {
-  it('renders all 10 category labels', () => {
+  it('renders all four outcome-oriented category labels', () => {
     render(<Skills />)
+    expect(skills).toHaveLength(4)
     for (const group of skills) {
       expect(screen.getByText(group.category)).toBeTruthy()
     }

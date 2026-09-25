@@ -5,43 +5,19 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    category: 'Operating Systems',
-    items: ['Unix', 'Linux (Ubuntu)', 'Linux (RHEL)', 'Linux (CentOS)', 'Windows'],
+    category: 'Software Engineering',
+    items: ['Python', 'TypeScript', 'React', 'Node.js', 'FastAPI', 'REST APIs', 'PostgreSQL'],
   },
   {
-    category: 'Programming & Scripting',
-    items: ['Python', 'Bash', 'JavaScript', 'React', 'TypeScript'],
+    category: 'Reliability & Operations',
+    items: ['Kubernetes', 'Linux', 'SRE', 'SLOs', 'Incident response', 'Capacity planning'],
   },
   {
-    category: 'Web Services',
-    items: ['Nginx', 'Kong', 'Traefik', 'Apache', 'IIS'],
+    category: 'Platforms & Delivery',
+    items: ['AWS', 'Azure', 'GCP', 'Terraform', 'Ansible', 'Helm', 'GitLab CI/CD', 'Argo CD'],
   },
   {
-    category: 'Database',
-    items: ['MySQL', 'Postgres', 'MongoDB'],
-  },
-  {
-    category: 'IaC',
-    items: ['Terraform', 'Ansible', 'Chef', 'Vagrant'],
-  },
-  {
-    category: 'GitOps',
-    items: ['ArgoCD', 'Argo Workflows', 'Argo Rollouts'],
-  },
-  {
-    category: 'DevOps Tools',
-    items: ['Docker', 'Kubernetes', 'Helm', 'Artifactory', 'GitLab', 'Git', 'Jenkins'],
-  },
-  {
-    category: 'Observability',
-    items: ['Datadog', 'OpenTelemetry', 'OTEL Collector', 'Vector', 'Splunk', 'Graylog'],
-  },
-  {
-    category: 'Cloud Technologies',
-    items: ['AWS', 'Azure', 'GCP'],
-  },
-  {
-    category: 'AI Tools and Frameworks',
-    items: ['Cursor', 'Claude', 'Ollama', 'Exo', 'RAG', 'MCP'],
+    category: 'Applied AI & Observability',
+    items: ['LLM applications', 'Agent workflows', 'RAG', 'MCP', 'Ollama', 'Evals', 'Datadog', 'OpenTelemetry'],
   },
 ]

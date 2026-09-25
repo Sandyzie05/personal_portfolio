@@ -4,11 +4,13 @@ import { Certifications } from './Certifications'
 import { certifications } from '../content/certifications'
 
 describe('Certifications', () => {
-  it('renders all 6 certification strings', () => {
+  it('renders all six certifications with issuer links', () => {
     render(<Certifications />)
     expect(certifications).toHaveLength(6)
     for (const cert of certifications) {
-      expect(screen.getByText(cert)).toBeTruthy()
+      const link = screen.getByText(cert.name).closest('a')
+      expect(link?.getAttribute('href')).toBe(cert.href)
+      expect(screen.getByText(cert.issuer)).toBeTruthy()
     }
   })
 })

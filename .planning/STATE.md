@@ -1,98 +1,46 @@
 ---
 gsd_state_version: 1.0
 milestone: v1.0
-milestone_name: milestone
-current_phase: 1
-current_phase_name: App Shell, Content & Deployment
-status: executing
-stopped_at: Phase 2 context gathered
-last_updated: "2026-07-20T06:15:57.794Z"
-last_activity: 2026-07-19
-last_activity_desc: Plan 01-03 (Projects/Testimonials) complete
+milestone_name: redesigned-portfolio
+current_phase: 3
+current_phase_name: Launch verification
+status: ready_for_deployment
+stopped_at: Local implementation and verification complete
+last_updated: "2026-09-24T17:00:00Z"
+last_activity: 2026-09-24
+last_activity_desc: Portfolio UI/UX redesign, content research, confidentiality pass, tests, and docs complete
 progress:
-  total_phases: 2
-  completed_phases: 0
-  total_plans: 4
-  completed_plans: 3
+  total_phases: 3
+  completed_phases: 2
 ---
 
 # Project State
 
-## Project Reference
-
-See: .planning/PROJECT.md (updated 2026-07-18)
-
-**Core value:** A visitor immediately understands Sandeep's professional depth (experience, projects, skills) through a portfolio that is memorable and technically impressive — the interactive background must always serve the content, never compete with it.
-
-**Current focus:** Phase 1 — App Shell, Content & Deployment
-
 ## Current Position
 
-Phase: 1 (App Shell, Content & Deployment) — EXECUTING
-Plan: 3 of 4 complete — next up: 01-04 (Deployment to MilesWeb cPanel)
-Status: Executing Phase 1
-Last activity: 2026-07-19 — Plan 01-03 (Projects/Testimonials) complete
-Progress: [███████░░░] 75%
+Phase 3: Launch verification. Local design and implementation are complete; external deployment remains.
 
-## Performance Metrics
+Progress: `[████████░░] 80%`
 
-**Velocity:**
+## Completed This Session
 
-- Total plans completed: 3
-- Average duration: 13.75 min
-- Total execution time: 0.69 hours
+- Installed and applied `dickwu/apple-design-skill` principles.
+- Researched resume, existing portfolio research, public personal repos, and recent enterprise work themes.
+- Reframed positioning around software engineering, SRE/DevOps, and applied AI.
+- Added generalized enterprise case studies with explicit confidentiality copy and test coverage.
+- Rebuilt visual system, responsive navigation, persistent light/dark themes, and restrained motion.
+- Updated downloadable resume, README, requirements, roadmap, and project decisions.
+- Passed tests, lint, and production build.
 
-**By Phase:**
+## Remaining
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 1 | 3 | 41 min | 13.75 min |
+- Deploy generated site to configured MilesWeb/cPanel application.
+- Run production smoke, viewport, link, and Lighthouse checks.
 
-**Recent Trend:**
+## Blockers
 
-- Last 5 plans: 01-01 (30 min), 01-02 (5 min), 01-03 (6 min)
-- Trend: stable at ~5-6 min for content-slice plans, after the 30 min scaffold plan
+- Production URL and deployment access were not part of this local implementation run.
 
-*Updated after plan completion*
-**Per-Plan Metrics:**
+## Superseded Context
 
-| Plan | Duration | Tasks | Files |
-|------|----------|-------|-------|
-| Phase 1 P01-01 | 30min | 3 tasks | 26 files |
-| Phase 1 P01-02 | 5min | 3 tasks | 15 files |
-| Phase 1 P01-03 | 6min | 2 tasks | ~10 files |
-
-## Accumulated Context
-
-### Decisions
-
-Decisions logged in PROJECT.md Key Decisions table. Recent decisions affecting current work:
-
-- [Roadmap]: 4 v1 background themes (Computers, AI/Neural Network, Space, Human Evolution) confirmed; Chess deferred to v2 (BG-07)
-- [Roadmap]: Background Engine phase (Phase 2) is scoped to build the shared ThemeModule contract + one reference theme first, then replicate to the remaining 3 themes — sequencing captured as a note within the phase rather than a separate phase, per research's over-scoping pitfall
-- [Roadmap]: Deployment (Phase 1) reuses the `jagdamba_automobiles` dependency-free Node `app.js` + Vite `dist/` pattern verbatim for MilesWeb/cPanel hosting
-- [Plan 01-01]: vite/vitest bumped to 6.4.3/3.2.7 (from the plan's pinned 6.3.6/3.2.4) after npm audit flagged a high+critical CVE in the dev/UI server — see 01-01-SUMMARY.md
-
-### Pending Todos
-
-None yet.
-
-### Blockers/Concerns
-
-- Resolved 2026-07-19: PROJ-01 repo list locked (`acksync`, `acksync_crm_lmb`, `stock_predictor`, `jagdamba_automobiles`, `cbse_tutor`, `compliOS`) and SOCIAL-01 quotes locked (Ankit Agnihotri, Nathan Stewart, Rebecca Cengiz-Robbs) — see 01-CONTEXT.md. Remaining: draft repo card copy from actual repo content during planning/execution.
-- Deployment target domain/subdomain and new GitHub repo name still unconfirmed — needed before DEPLOY-01 execution step, not before.
-- Phase 2 (Background Engine Core) is flagged by research as needing deeper research during planning (GPU-driven particle interpolation / shader-based assemble-disassemble has no controlled benchmark for this project's specific case) — consider `--research-phase` when planning Phase 2.
-
-## Deferred Items
-
-Items acknowledged and carried forward from previous milestone close:
-
-| Category | Item | Status | Deferred At |
-|----------|------|--------|-------------|
-| *(none)* | | | |
-
-## Session Continuity
-
-Last session: 2026-07-20T06:15:57.789Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-background-engine-4-theme-system/02-CONTEXT.md
+The four-theme WebGL background direction captured in older Phase 2 documents is historical. The active decision is a lighter, content-first topology hero plus light/dark appearance; see `.planning/UI-REVAMP-2026-09.md`.

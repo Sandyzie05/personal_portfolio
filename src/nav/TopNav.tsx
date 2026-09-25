@@ -1,15 +1,12 @@
 import { useState } from 'react'
+import { ThemeToggle } from '../theme/ThemeToggle'
 
 const links = [
-  { href: '#hero', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#work', label: 'Work' },
   { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#certifications', label: 'Certifications' },
-  { href: '#education', label: 'Education' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Toolkit' },
+  { href: '#about', label: 'About' },
 ]
 
 export function TopNav() {
@@ -22,6 +19,9 @@ export function TopNav() {
       </a>
       <header className="top-nav">
         <nav aria-label="Primary">
+          <a className="wordmark" href="#hero" aria-label="Sandeep Gupta, home">
+            SG<span aria-hidden="true">/</span>
+          </a>
           <button
             type="button"
             className="nav-toggle"
@@ -30,13 +30,8 @@ export function TopNav() {
             onClick={() => setIsOpen((open) => !open)}
           >
             <span className="sr-only">Toggle menu</span>
-            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-              <path
-                d="M3 6h18M3 12h18M3 18h18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
             </svg>
           </button>
           <ul id="primary-nav-links" className={isOpen ? 'nav-links open' : 'nav-links'}>
@@ -48,6 +43,12 @@ export function TopNav() {
               </li>
             ))}
           </ul>
+          <div className="nav-actions">
+            <ThemeToggle />
+            <a className="nav-contact" href="#contact">
+              Let&apos;s talk
+            </a>
+          </div>
         </nav>
       </header>
     </>

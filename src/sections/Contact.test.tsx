@@ -6,7 +6,7 @@ import { contact } from '../content/contact'
 describe('Contact', () => {
   it('renders a mailto link', () => {
     render(<Contact />)
-    const link = screen.getByText(contact.email)
+    const link = screen.getByText('Email me')
     expect(link.getAttribute('href')?.startsWith(`mailto:${contact.email}`)).toBe(true)
   })
 
@@ -28,7 +28,7 @@ describe('Contact', () => {
 
   it('renders a same-origin resume download link', () => {
     render(<Contact />)
-    const link = screen.getByText('Download Résumé')
+    const link = screen.getByText(/Download résumé/)
     expect(link.getAttribute('href')).toBe('/resume.pdf')
     expect(link.getAttribute('download')).toBe(contact.resumeDownloadName)
   })

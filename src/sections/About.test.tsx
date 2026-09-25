@@ -4,8 +4,9 @@ import { About } from './About'
 import { about } from '../content/about'
 
 describe('About', () => {
-  it('renders the professional summary', () => {
+  it('renders the professional narrative', () => {
     render(<About />)
-    expect(screen.getByText(about.summary)).toBeTruthy()
+    expect(screen.getByText(about.intro)).toBeTruthy()
+    expect(screen.getByText(about.detail)).toBeTruthy()
   })
 })
