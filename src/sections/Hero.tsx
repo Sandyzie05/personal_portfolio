@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section id="hero" className="hero" aria-labelledby="hero-heading">
       <div className="hero-visual" aria-hidden="true">
-        <img src="/assets/system-topology.jpg" alt="" />
+        <img src={`${import.meta.env.BASE_URL}assets/system-topology.jpg`} alt="" />
       </div>
       <div className="hero-content">
         <p className="eyebrow">{hero.title}</p>

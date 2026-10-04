@@ -146,6 +146,29 @@ bash scripts/deploy-smoke.sh https://your-portfolio-domain.example
 
 The server reads the host-provided `PORT` environment variable and defaults to port `4173` locally.
 
+### Deployment Under `/portfolio/`
+
+The current deployment uses `https://sandyzie.in/portfolio/`. Set the cPanel application URL
+to `/portfolio/` and keep Vite's `base` and the production server's `BASE` aligned with that path.
+When referencing files from `public/` in application code, prefix the path with
+`import.meta.env.BASE_URL` so images and resume links resolve within the application rather
+than at the domain root.
+
+After pulling changes, activate the application's Node.js environment, install build
+dependencies with `npm install --include=dev`, run `npm run build`, and restart through
+cPanel's application controls. Do not run the persistent `start` script through
+**Run NPM Script**, as that can hold the Node.js Selector application lock.
+
+Verify the deployment and hero image:
+
+```bash
+bash scripts/deploy-smoke.sh https://sandyzie.in/portfolio
+curl -I https://sandyzie.in/portfolio/assets/system-topology.jpg
+```
+
+The hero image should return HTTP 200 with `Content-Type: image/jpeg`, and the resume
+should return HTTP 200 with `Content-Type: application/pdf`.
+
 ## Repository
 
 [github.com/Sandyzie05/personal_portfolio](https://github.com/Sandyzie05/personal_portfolio)

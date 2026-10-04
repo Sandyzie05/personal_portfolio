@@ -1,7 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Contact } from './Contact'
 import { contact } from '../content/contact'
+
+vi.hoisted(() => {
+  vi.stubEnv('BASE_URL', '/portfolio/')
+})
 
 describe('Contact', () => {
   it('renders a mailto link', () => {
@@ -29,7 +33,7 @@ describe('Contact', () => {
   it('renders a same-origin resume download link', () => {
     render(<Contact />)
     const link = screen.getByText(/Download résumé/)
-    expect(link.getAttribute('href')).toBe('/resume.pdf')
+    expect(link.getAttribute('href')).toBe('/portfolio/resume.pdf')
     expect(link.getAttribute('download')).toBe(contact.resumeDownloadName)
   })
 })
